@@ -46,7 +46,7 @@ while isfile(strcat('.\simData\simData', int2str(n), '.mat'))
         Vx_i = Vel_x.signals.values(i);
         Vy_i = Vel_y.signals.values(i);
         p_i = Press.signals.values(i);
-        Fz_i = VerticalLoad(i); %% change to Fz.signals.values(i)
+        Fz_i = Fz.signals.values(i); % or Verticalload(i) if variable exists
         gamma_i = InclinAngle.signals.values(i);
         if i ~= 1
             omega = compute_omega(SRinput.signals.values(i), Vx_i, rroul(i-1));
@@ -76,15 +76,15 @@ while isfile(strcat('.\simData\simData', int2str(n), '.mat'))
     % Tametire end
     tametire(4, tire_id);
     
-    ticToc = toc
+    ticToc = toc;
 
     %% Save Results
-    saveResults;
+    saveResults();
 
     %% Clear Section
-    clearWorkspace;
+    clearWorkspace();
     
-    n = n+1
+    n = n+1;
 end
 
 function omega = compute_omega(SR, Vx, Rroul)

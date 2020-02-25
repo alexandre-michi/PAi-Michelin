@@ -70,7 +70,7 @@ SRinput.time=time;
 %% File saving
 simulationName = "aberrant values in SRinput (-max every 100 values) - animationBasedOnRealSimulationData";
 simulationInfo = "On a chargé les données de donnees_simu issues du simulateur et on essaie d'amplifier certains paramètres pour observer leurs influence.";
-run("saveSimData.m");
+saveSimData();
 
 %% clear section
 clear SIM_Ax SIM_Ay SIM_camber_FL SIM_camber_FR SIM_camber_RL SIM_camber_RR SIM_Fz_FL SIM_Fz_FR SIM_Fz_RL SIM_Fz_RR SIM_Slip_Angle_FL SIM_Slip_Angle_FR SIM_Slip_Angle_RL SIM_Slip_Angle_RR SIM_Slip_Ratio_FL SIM_Slip_Ratio_FR SIM_Slip_Ratio_FR SIM_Slip_Ratio_RL SIM_Slip_Ratio_RR SIM_time SIM_Vx SIM_Vy SIM_Wheel_Omega_FL SIM_Wheel_Omega_FR SIM_Wheel_Omega_RL SIM_Wheel_Omega_RR SIM_Yaw_Rate; 
