@@ -46,7 +46,12 @@ i = 1;
 Vx_i = Vel_x.signals.values(i);
 Vy_i = Vel_y.signals.values(i);
 p_i = Press.signals.values(i);
-Fz_i = VerticalLoad(i);
+
+if exists('Fz', 'var')
+    Fz_i = Fz(i);
+elseif exists('Verticalload', 'var')
+     Fz_i = VerticalLoad(i);
+
 gamma_i = InclinAngle.signals.values(i);
 omega = compute_omega(SRinput.signals.values(i), Vx_i, T(6));
 TSol = TempTrack.signals.values(i);
