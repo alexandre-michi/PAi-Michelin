@@ -1,0 +1,44 @@
+% initilise les sorties
+% ie c'est la liste des variables de sortie
+zero_vect = zeros(length(time),1);
+Fx = zero_vect;
+Fy = zero_vect;
+Mx = zero_vect;
+My = zero_vect;
+Mz = zero_vect;
+Tgi = zero_vect;
+Ts = zero_vect;
+Ti = zero_vect;
+p_out = zero_vect;
+tAirInterne = zero_vect;
+re = zero_vect;
+rroul = zero_vect;
+sa = zero_vect;
+sr = zero_vect;
+v = zero_vect;
+kzz = zero_vect;
+rnom = zero_vect;
+wear = zero_vect;
+ppa = zero_vect;
+deltap = zero_vect;
+Nx = zero_vect;
+Ny = zero_vect;
+TeqWLF = zero_vect;
+Tc0 = zero_vect;
+Tcm = zero_vect;
+Tn = zero_vect;
+Wf = zero_vect;
+pertes = zero_vect;
+G = zero_vect;
+Wg = zero_vect;
+deport_y = zero_vect;
+Pc0 = zero_vect;
+Lx = zero_vect;
+S2 = zero_vect;
+D_MFD = zero_vect;
+IntWMeca = zero_vect;
+IntChim = zero_vect;
+mu0 = zero_vect;
+partChim = zero_vect;
+
+clear zero_vect;
